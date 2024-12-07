@@ -1,3 +1,5 @@
+// Used class activity js file for Forms as a basis to create this js file. 
+
 document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent form submission
   

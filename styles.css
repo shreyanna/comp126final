@@ -341,7 +341,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Horizontal Scrollable Cards */
+/* Horizontal Scrollable Cards- learned from: https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 */
 .featured-insights {
     padding: 2rem 1rem;
     background-color: #112240;
