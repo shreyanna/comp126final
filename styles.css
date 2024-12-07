@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -26,10 +25,11 @@ body {
     background-color: rgba(0, 31, 63, 0.1);
     padding: 1rem 1rem 0.75rem 1rem;
     justify-content: space-between;
+    position: sticky;
 }
 
 .header h1 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .nav-links {
@@ -173,7 +173,6 @@ body {
 
 .card {
     text-decoration: none;
-    /* Explicitly remove underline */
     background: url("img/dots.png") no-repeat center;
     background-size: cover;
     text-align: center;
@@ -190,9 +189,7 @@ body {
 
 .card a {
     color: inherit;
-    /* Inherit text color from parent */
     display: block;
-    /* Ensure the link covers the entire card */
     width: 100%;
     height: 100%;
 }
@@ -200,29 +197,22 @@ body {
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    /* Add depth on hover */
 }
 
 .card p {
     margin-top: 1rem;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #fff;
-    /* Default white text */
     padding: 0.5rem 1rem;
-    /* Add padding to make it more noticeable */
     border-radius: 5px;
-    /* Rounded edges for hover effect */
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .card:hover p {
     background-color: rgba(0, 0, 0, 0.2);
-    /* Add blue background on hover */
     color: #fff;
-    /* Keep the text white */
     transform: scale(1.05);
-    /* Slightly enlarge the text */
 }
 
 /* Content Section */
@@ -251,33 +241,23 @@ body {
 .content p {
     margin-bottom: 1rem;
     font-size: 1rem;
-    /* Add spacing between paragraphs */
 }
 
 .learn-more {
     font-size: 1.1rem;
     display: flex;
     justify-content: right;
-    /* Make it consistent with button-like links */
     color: #ffffff;
-    /* Default color */
     text-decoration: none;
-    /* Remove underline */
     font-weight: bold;
-    /* Make the link visually prominent */
     padding: 0.5rem 1rem;
-    /* Add padding to make it visually consistent */
     border-radius: 5px;
-    /* Optional: Rounded edges for smoother style */
     transition: color 0.3s ease, transform 0.3s ease;
-    /* Smooth animation */
 }
 
 .learn-more:hover {
     color: #007bff;
-    /* Change text color to blue on hover */
     transform: scale(1.1);
-    /* Slightly enlarge the text */
 }
 
 
@@ -291,45 +271,12 @@ body {
     background: url("img/insights.png") no-repeat center/cover;
 }
 
-/* Scrollable Cards (Right-Side Menu) */
-/* Horizontal scroll card inspired from https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6*/
-.scrollable-cards {
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    height: 35rem;
-    width: 50%;
-    padding: 1rem;
-    background: rgba(17, 34, 64, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-}
-
-.scrollable-cards .card {
-    background: #1c293f;
-    padding: 1rem;
-    border-radius: 5px;
-    color: #fff;
-    margin-bottom: 1rem;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.scrollable-cards .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
-}
-
-
 /* Contact Section */
 .contact-section {
     background: url("img/contact.png") no-repeat center center/cover;
-    /* Use the specified background */
-    padding: 10rem ;
-    /* Add sufficient padding for spacing */
+    padding: 10rem;
     text-align: left;
     color: #fff;
-    /* Ensure text color contrasts the background */
 }
 
 .contact-section h2 {
@@ -345,11 +292,9 @@ body {
 
 .contact-form {
     background: rgba(0, 0, 0, 0.6);
-    /* Semi-transparent black for form background */
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    /* Add depth with shadow */
 }
 
 .form-group {
@@ -371,9 +316,7 @@ button {
     border-radius: 5px;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.2);
-    /* Slight transparency */
     color: #fff;
-    /* White text */
 }
 
 textarea {
@@ -387,8 +330,7 @@ textarea:focus {
 }
 
 button {
-    background:rgba(156, 156, 170, 0.2);
-    /* Primary blue button */
+    background: rgba(156, 156, 170, 0.2);
     color: #fff;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
@@ -396,9 +338,7 @@ button {
 
 button:hover {
     background: #0056b3;
-    /* Darker blue on hover */
     transform: scale(1.05);
-    /* Slight enlarge effect */
 }
 
 /* Horizontal Scrollable Cards */
@@ -417,19 +357,19 @@ button:hover {
 
 .scroll-container {
     display: flex;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    gap: 1rem; /* Space between cards */
+    overflow-x: auto;
+    gap: 1rem;
     padding: 1rem 0;
-    scroll-behavior: smooth; /* Smooth scrolling for user interactions */
+    scroll-behavior: smooth;
 }
 
 .scroll-card {
-    min-width: 300px; /* Ensures cards have a consistent width */
+    min-width: 300px;
     background-color: #1c293f;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
-    flex-shrink: 1; /* Prevents cards from shrinking */
+    flex-shrink: 1;
     color: #fff;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -470,13 +410,14 @@ html {
 /* Tablets (768px and up) */
 @media (min-width: 768px) {
     .header {
-        flex-direction: row; /* Inline header elements */
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        position: sticky;
     }
 
     .nav-links {
-        flex-direction: row; /* Horizontal navigation links */
+        flex-direction: row;
         gap: 2rem;
     }
 
@@ -489,7 +430,7 @@ html {
     }
 
     .cards-container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -500,6 +441,7 @@ html {
         justify-content: space-between;
         align-items: center;
         padding: 4rem 2rem;
+        position: sticky;
     }
 
     .hero-content {
@@ -507,12 +449,10 @@ html {
     }
 
     .cards-container {
-        grid-template-columns: repeat(4, 1fr); /* Four columns */
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .content {
-        max-width: 70%; /* Wider content area for desktops */
+        max-width: 70%;
     }
 }
-
-
